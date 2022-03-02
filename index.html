@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ログイン</title>
+    <meta charset="utf-8">
+  </head>
+    <center>
+    <div class="conteiner" id="cont">
+
+  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="google">
+  <h1 class="title" id="title">ログイン</h1>
+  <h2 class="subtitle" id="subtitle">YouTubeに移動する</h2>
+   <label>
+   <h4 id="menu">メールアドレスまたは電話番号</h4>
+      </label>
+     <input type="email
+     " class="email" id="input">
+     <label>
+     	<p>
+     <button class="btn" id="btn">次へ</button>
+     </p>
+     </label>
+
+  </div>
+  </center>
+  <style type="text/css">
+  	.google{
+padding-top: 40px;
+  height: 40px;
+}
+.conteiner{
+	margin-top: 100px;
+  height: 380px;
+  border: 0.8px solid #bfbfbf;
+
+  width: 400px;
+}
+.title{
+  font-size: 30px;
+  font-family:" ＭＳ Ｐゴシック";
+  color:#424242;
+ font-weight:545;
+  
+}
+.subtitle{
+  font-size:15px;
+  color:#424242;
+   font-weight:549;
+}
+.email{
+  border: none;
+  border-bottom: 2px solid #4287f5;
+  outline: none;
+  color:#424242;
+   font-weight:545;
+   width: 250px;
+   height: 20px;
+}
+h4{
+   font-size:14px;
+  color:#4287f5;
+   font-weight:549;
+}
+.btn{
+	background-color: #4287f5;
+	border-radius: 5px;
+	border:none;
+	height: 38px;
+	width: 68px;
+	color: white;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.help{
+	   font-size:11px;
+  color:#4287f5;
+   font-weight:549;
+   cursor: pointer;
+}
+
+  </style>
+  <script type="text/javascript">
+  	const btn = document.getElementById("btn");
+  	let count = 0;
+  	btn.addEventListener("click",function(){
+  		if(count == 0){
+  		count++;
+  		let id = document.getElementById("input").value;
+  		document.getElementById("menu").innerHTML="パスワードを入力";
+  		btn.innerHTML="ログイン";
+  		}else{
+  			alert("このサイトは偽サイトですパスワードを入力したあなた！危なかったですね～	")
+  			location.href="https://www.google.com"
+  			location.href="https://www.google.com"
+  			location.href="https://www.google.com"
+  		}
+  	})
+  </script>
+</html>
